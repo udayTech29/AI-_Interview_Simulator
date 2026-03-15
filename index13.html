@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Interview Simulator</title>
+<link rel="stylesheet" href="Style15.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Interview Simulator</h1>
+
+<button onclick="toggleDark()">Toggle Dark Mode</button>
+
+<h3>Select Role</h3>
+
+<select id="role">
+<option value="backend">Backend Developer</option>
+<option value="frontend">Frontend Developer</option>
+<option value="datascience">Data Scientist</option>
+</select>
+
+<h3>Paste Resume Text</h3>
+
+<textarea id="resume" rows="4"></textarea>
+
+<br>
+
+<button onclick="generateQuestions()">Generate Questions From Resume</button>
+
+<br><br>
+
+<button onclick="startInterview()">Start Interview</button>
+
+<h3 id="progress"></h3>
+<h3 id="timer"></h3>
+
+<div id="interviewBox"></div>
+
+</div>
+
+<script src="app5.js"></script>
+
+</body>
+</html>
